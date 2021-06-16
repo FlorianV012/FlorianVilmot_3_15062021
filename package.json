@@ -1,0 +1,19 @@
+{
+  "name": "P3 - ohmyfood",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FlorianV012/FlotianVilmot_3_15062021.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FlorianV012/FlorianVilmot_3_15062021/issues"
+  },
+  "homepage": "https://github.com/FlorianV012/FlorianVilmot_3_15062021#readme"
+}
