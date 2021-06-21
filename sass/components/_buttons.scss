@@ -1,0 +1,9 @@
+.btn{
+    display: block;
+    padding: 1.6rem 2.2rem;
+    border-radius: 9999px;
+    background: linear-gradient(to top left, $color-primary, $color-secondary);
+    color: $color-white;
+    font-size: 2rem;
+    @include shadow-box
+}

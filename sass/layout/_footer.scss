@@ -1,0 +1,21 @@
+.footer{
+    padding: $layout-margin;
+    background-color: $color-footer;
+    color: $color-white;
+    &__logo{
+        font-family: 'Shrikhand', cursive;
+        font-size: 2rem;
+    }
+    h2{
+        padding: 1rem 0;
+        font-weight: normal;
+    }
+    li{
+        font-size: 1.6rem;
+        padding: .5rem 0;
+        list-style: none;
+        a {
+            color: $color-white;
+        }
+    }
+}

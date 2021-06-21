@@ -1,0 +1,13 @@
+.header{
+    height: 7rem;
+    display: flex;
+    justify-content: center;
+    @include shadow-box;
+    &__logo{
+        display: inline-block;
+        font-family: 'Shrikhand', cursive;
+        font-size: 3rem;
+        font-weight: normal;
+        line-height: 7rem;
+    }
+}

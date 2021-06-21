@@ -3,14 +3,17 @@
 *::before {
     margin: 0;
     padding: 0;
-    box-sizing: inherit;
+    box-sizing: border-box;
 }
 
 html {
-    // 10px div by def of 16px
     font-size: 62.5%;
 }
 
-body {
+/* body {
     box-sizing: border-box;
-}
+} */
+
+a {
+    text-decoration: none;
+  }
