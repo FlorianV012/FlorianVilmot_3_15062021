@@ -72,6 +72,18 @@ p {
       justify-content: space-around; }
     .card__bottom .fa-heart {
       font-size: 2.5rem; }
+  .card__new {
+    width: 8rem;
+    height: 3rem;
+    position: relative;
+    top: 15%;
+    left: 75%;
+    background: #99e2d0;
+    color: #008564;
+    text-align: center;
+    border-radius: 0.2rem;
+    line-height: 3rem;
+    font-size: 1.4rem; }
 
 .fa-heart + .fas {
   background: linear-gradient(#9356dc, #ff79da);
@@ -241,7 +253,6 @@ main {
       line-height: 8rem;
       opacity: 0;
       transition: all 0.4s ease-in-out;
-      
     }
   } */ }
   .dish__card {
@@ -254,11 +265,14 @@ main {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      width: 85%;
       font-weight: bold; }
       .dish__card__name__desc {
         font-weight: 300;
-        padding-top: 1rem;
+        padding-top: 1rem; }
+      .dish__card__name p {
         white-space: nowrap;
+        overflow: hidden;
         text-overflow: ellipsis; }
     .dish__card__price {
       font-weight: bold; }
