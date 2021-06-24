@@ -1,0 +1,130 @@
+.img-top img {
+  width: 100%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  background: $color-bg;
+  border-radius: 3rem 3rem 0 0;
+  position: relative;
+  top: -3rem;
+  padding: 0 $layout-margin;
+  margin-bottom: 2 * $layout-margin;
+  h2 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 3rem 0;
+    font-family: "Shrikhand", cursive;
+    font-size: 2.5rem;
+    font-weight: normal;
+    .heart {
+      margin: 0 1rem 0 auto;
+    }
+  }
+}
+
+.article-menu {
+  h3 {
+    text-transform: uppercase;
+    font-weight: 300;
+    &::after {
+      content: "";
+      display: block;
+      width: 4rem;
+      height: 0.3rem;
+      background: $color-tertiary;
+      position: relative;
+      top: 1rem;
+      margin-bottom: 2.5rem;
+    }
+  }
+}
+.container {
+  margin-bottom: 2 * $layout-margin;
+}
+
+.dish {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 8rem;
+  margin: $layout-margin 0;
+  background: $color-white;
+  border-radius: 1.5rem;
+  @include shadow-box;
+  &__card {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1.5rem;
+
+    &__name {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      font-weight: bold;
+      &__desc {
+        font-weight: 300;
+        padding-top: 1rem;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+    }
+    &__price {
+      font-weight: bold;
+    }
+  }
+  /* &__check {
+    width: 0rem;
+    border-radius: 0 1.5rem 1.5rem 0;
+    background: $color-tertiary;
+    color: $color-white;
+    text-align: center;
+    transition: all 0.4s ease-in-out;
+
+    .fas {
+      font-size: 3rem;
+      line-height: 8rem;
+      opacity: 0;
+      transition: all 0.4s ease-in-out;
+      
+    }
+  } */
+}
+
+// animation coche
+
+/* .dish {
+  &:hover {
+    & > .dish__check {
+      width: 15rem;
+      & > .fas {
+        opacity: 1;
+        transform: rotate(-360deg);
+      }
+    }
+  }
+} */
+
+// animation apparition
+
+.load {
+  animation: elem-apparition 0.8s both;
+  @for $i from 1 through 15 {
+    &--#{$i} {
+      animation-delay: $anim-delay * $i;
+    }
+  }
+}
+
+@keyframes elem-apparition {
+  from {
+    opacity:0;
+}
+to {
+    opacity:1;
+}
+}

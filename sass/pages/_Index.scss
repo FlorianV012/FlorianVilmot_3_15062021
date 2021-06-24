@@ -15,8 +15,7 @@ section {
     display: flex;
     flex-direction: column;
     text-align: center;
-    background: $color-bg;
-    h2{
+        h2{
         font-size: 2.2rem;
         padding-bottom: 1.5rem;
     }
@@ -27,6 +26,7 @@ section {
 }
 
 .section-fonctionnement {
+  background: $color-white;
     h2{
         margin-bottom: $layout-margin *1.5;
     }
@@ -57,9 +57,6 @@ section {
   }
 }
 
-.section-restaurants {
-    background: $color-bg;
-}
 .card:nth-child(1) img {
   object-position: 50% 90%;
 }
