@@ -1,0 +1,8 @@
+@function dark-txt($clr) {
+  $hue: hue($clr);
+  $sat: 100%;
+  $light: 24%;
+  $dark-txt: hsl($hue, $sat, $light);
+
+  @return $dark-txt;
+}
