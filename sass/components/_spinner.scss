@@ -1,7 +1,7 @@
-.spin-wrapper {
-  z-index: 10;
+.spin-wrapper {  
   background: $color-bg;
-  opacity: 1;
+  opacity: 1;  
+  animation: disappear-load  2.5s ease-out forwards;
 }
 
 .header,
@@ -9,15 +9,24 @@
 section,
 footer {
   opacity: 0;
-  animation: anim1 2.5s ease-out both;
+  animation: anim-load 2.5s ease-out both;
+  z-index: 15;
 }
 
-@keyframes anim1 {
+@keyframes anim-load {
   20% {
     opacity: 0;
   }
   100% {
     opacity: 1;
+  }
+}
+@keyframes disappear-load {
+  0%,99%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
   }
 }
 
