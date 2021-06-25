@@ -1,17 +1,15 @@
-@mixin shadow-box ($size:$shadow-size) {
-    box-shadow: 0 $size $size rgba(0, 0, 0, 0.5);
+@mixin shadow-box($size: $shadow-size) {
+  box-shadow: 0 $size $size rgba(0, 0, 0, 0.5);
 }
-
 
 @mixin lighten-btn {
-    background: linear-gradient(to top left, lighten($color-primary, 5%), lighten($color-secondary, 5%));
+  background: linear-gradient(
+    to top left,
+    lighten($color-primary, 5%),
+    lighten($color-secondary, 5%)
+  );
 }
 
-@function dark-txt ($clr) {
-    $hue: hue($clr);
-    $sat: 100%;
-    $light: 24%;
-    $dark-txt: hsl($hue, $sat, $light);
-
-    @return $dark-txt;
+@mixin anim-spin($spin-delay-order) {
+  animation: spin $spin-dur $spin-delay-order * $spin-delay linear infinite;
 }
