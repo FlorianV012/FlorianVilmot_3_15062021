@@ -46,9 +46,6 @@ p {
     box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.5); }
 
 .card {
-  display: flex;
-  flex-direction: column;
-  min-width: 300px;
   width: 90vw;
   height: calc(0.7 * 90vw);
   margin: 2rem auto;
@@ -76,10 +73,10 @@ p {
     width: 8rem;
     height: 3rem;
     position: relative;
-    top: 15%;
-    left: 75%;
+    top: -95%;
+    left: 70%;
     background: #99e2d0;
-    color: #008564;
+    color: #007a5c;
     text-align: center;
     border-radius: 0.2rem;
     line-height: 3rem;
@@ -115,6 +112,8 @@ p {
     translate: -50%, -50%;
     font-size: 3rem;
     color: #000; }
+  .header .fas {
+    color: #353535; }
 
 .footer {
   padding: 2rem;
@@ -139,7 +138,8 @@ section {
 .location {
   line-height: 5rem;
   background: #eaeaea;
-  text-align: center; }
+  text-align: center;
+  color: #353535; }
   .location span {
     padding-right: 1rem; }
 
@@ -178,7 +178,12 @@ section {
       left: -1.2rem; }
     .section-fonctionnement__label .fas {
       font-size: 2rem;
-      margin-right: 2rem; }
+      margin-right: 2rem;
+      color: #7e7e7e; }
+    .section-fonctionnement__label:hover {
+      background: #f2eafb; }
+      .section-fonctionnement__label:hover > .fas {
+        color: #9356dc; }
 
 .card:nth-child(1) img {
   object-position: 50% 90%; }

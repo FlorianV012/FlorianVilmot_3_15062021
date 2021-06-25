@@ -6,6 +6,7 @@ section {
     line-height: 5rem;
     background: #eaeaea;
     text-align: center;
+    color: $color-footer;
     span {
         padding-right: 1rem;
     }
@@ -53,6 +54,13 @@ section {
     .fas {
       font-size: 2rem;
       margin-right: 2rem;
+      color: $color-ico;
+    }
+    &:hover{
+      background: lighten($color-primary, 35%); 
+      & > .fas{
+        color: $color-primary;
+      }
     }
   }
 }

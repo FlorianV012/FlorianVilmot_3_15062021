@@ -7,3 +7,11 @@
     background: linear-gradient(to top left, lighten($color-primary, 5%), lighten($color-secondary, 5%));
 }
 
+@function dark-txt ($clr) {
+    $hue: hue($clr);
+    $sat: 100%;
+    $light: 24%;
+    $dark-txt: hsl($hue, $sat, $light);
+
+    @return $dark-txt;
+}
