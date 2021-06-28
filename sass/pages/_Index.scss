@@ -1,79 +1,114 @@
 section {
-  padding: 2*$layout-margin $layout-margin;
+  padding: 2 * $layout-margin $layout-margin;
+  @media screen and (min-width: 768px) {
+    padding: 2 * $layout-margin;
+  }
 }
 
-.location{
-    line-height: 5rem;
-    background: #eaeaea;
-    text-align: center;
-    color: $color-footer;
-    span {
-        padding-right: 1rem;
-    }
+.location {
+  line-height: 5rem;
+  background: #eaeaea;
+  text-align: center;
+  color: $color-footer;
+  span {
+    padding-right: 1rem;
+  }
+  @media screen and (min-width: 768px){
+    width: 60rem;
+    margin: 0 auto;
+    border-radius: 9999px;
+    position: relative;
+    top: 2rem;
+    text-align: left;
+    padding-left: 3rem;
+  }
 }
 
-.section-reserve{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-        h2{
-        font-size: 2.2rem;
-        padding-bottom: 1.5rem;
-    }
-    p{
-        padding-bottom: 2.5rem;
-    }
-    
+.section-reserve {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  h2 {
+    font-size: 2.2rem;
+    padding-bottom: 1.5rem;
+  }
+  p {
+    padding-bottom: 2.5rem;
+  }
 }
 
 .section-fonctionnement {
   background: $color-white;
-    h2{
-        margin-bottom: $layout-margin *1.5;
-    }
-  &__label {
-    display: flex;
-    align-items: center;
-    margin-left: $layout-margin;
-    margin-bottom: $layout-margin;
-    background: $color-bg;
-    border-radius: 20px;
-    line-height: 7rem;
-    @include shadow-box;
-    &__num {
-      display: inline-block;
-      width: 2.4rem;
-      line-height: 2.5rem;
-      background: $color-primary;
-      border-radius: 9999px;
-      color: $color-white;
-      text-align: center;
-      position: relative;
-      left: -1.2rem;
-    }
-    .fas {
-      font-size: 2rem;
-      margin-right: 2rem;
-      color: $color-ico;
-    }
-    &:hover{
-      background: lighten($color-primary, 35%); 
-      & > .fas{
-        color: $color-primary;
+  h2 {
+    margin-bottom: $layout-margin * 1.5;
+  }
+  &__container {
+    &__label {
+      display: flex;
+      align-items: center;
+      margin-left: $layout-margin;
+      margin-bottom: $layout-margin;
+      background: $color-bg;
+      border-radius: 20px;
+      line-height: 7rem;
+      @include shadow-box;
+      &__num {
+        display: inline-block;
+        width: 2.4rem;
+        line-height: 2.5rem;
+        background: $color-primary;
+        border-radius: 9999px;
+        color: $color-white;
+        text-align: center;
+        position: relative;
+        left: -1.2rem;
+      }
+      .fas {
+        font-size: 2rem;
+        margin-right: 2rem;
+        color: $color-ico;
+      }
+      &:hover {
+        background: lighten($color-primary, 35%);
+        & > .fas {
+          color: $color-primary;
+        }
+      }
+      @media screen and (min-width: 768px) {
+        width: 30rem;
+        margin-right: 2rem;
       }
     }
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    margin: 0 $layout-margin;
+    border-radius: 1.5rem;
   }
 }
 
-.card:nth-child(1) img {
-  object-position: 50% 90%;
+.section-restaurants {
+  .container {
+    .card:nth-child(1) img {
+      object-position: 50% 90%;
+    }
+    .card:nth-child(2) img {
+      object-position: 50% 60%;
+    }
+    .card:nth-child(3) img {
+      object-position: 50% 90%;
+    }
+    .card:nth-child(4) img {
+      object-position: 50% 95%;
+    }
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      margin: 0;
+    }
+  }
 }
-.card:nth-child(2) img {
-    object-position: 50% 60%;
-  }
-  .card:nth-child(3) img {
-    object-position: 50% 90%;
-  }
-  .card:nth-child(4) img {
-    object-position: 50% 95%;
-  }

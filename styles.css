@@ -9,7 +9,11 @@ html {
   font-size: 62.5%; }
 
 body {
-  background: #f6f6f6; }
+  background: #f6f6f6;
+  max-width: 1500px; }
+  @media screen and (min-width: 1300px) {
+    body {
+      margin: 0 auto; } }
 
 a {
   text-decoration: none; }
@@ -81,6 +85,23 @@ p {
     border-radius: 0.2rem;
     line-height: 3rem;
     font-size: 1.4rem; }
+  @media screen and (min-width: 768px) {
+    .card {
+      max-width: 50rem;
+      max-height: 35rem;
+      width: 45%;
+      height: 31.5vw; } }
+  @media screen and (min-width: 992px) {
+    .card {
+      width: 27%;
+      height: 18.9vw;
+      min-width: 28rem;
+      min-height: 19.6rem;
+      margin: 1rem; } }
+  @media screen and (min-width: 1200px) {
+    .card {
+      width: 23%;
+      height: 16.1vw; } }
 
 .fa-heart + .fas {
   background: linear-gradient(#9356dc, #ff79da);
@@ -221,9 +242,15 @@ footer {
     list-style: none; }
     .footer li a {
       color: #fff; }
+  @media screen and (min-width: 768px) {
+    .footer {
+      padding: 2rem 5rem; } }
 
 section {
   padding: 4rem 2rem; }
+  @media screen and (min-width: 768px) {
+    section {
+      padding: 4rem; } }
 
 .location {
   line-height: 5rem;
@@ -232,6 +259,15 @@ section {
   color: #353535; }
   .location span {
     padding-right: 1rem; }
+  @media screen and (min-width: 768px) {
+    .location {
+      width: 60rem;
+      margin: 0 auto;
+      border-radius: 9999px;
+      position: relative;
+      top: 2rem;
+      text-align: left;
+      padding-left: 3rem; } }
 
 .section-reserve {
   display: flex;
@@ -247,7 +283,7 @@ section {
   background: #fff; }
   .section-fonctionnement h2 {
     margin-bottom: 3rem; }
-  .section-fonctionnement__label {
+  .section-fonctionnement__container__label {
     display: flex;
     align-items: center;
     margin-left: 2rem;
@@ -256,7 +292,7 @@ section {
     border-radius: 20px;
     line-height: 7rem;
     box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.5); }
-    .section-fonctionnement__label__num {
+    .section-fonctionnement__container__label__num {
       display: inline-block;
       width: 2.4rem;
       line-height: 2.5rem;
@@ -266,26 +302,41 @@ section {
       text-align: center;
       position: relative;
       left: -1.2rem; }
-    .section-fonctionnement__label .fas {
+    .section-fonctionnement__container__label .fas {
       font-size: 2rem;
       margin-right: 2rem;
       color: #7e7e7e; }
-    .section-fonctionnement__label:hover {
+    .section-fonctionnement__container__label:hover {
       background: #f2eafb; }
-      .section-fonctionnement__label:hover > .fas {
+      .section-fonctionnement__container__label:hover > .fas {
         color: #9356dc; }
+    @media screen and (min-width: 768px) {
+      .section-fonctionnement__container__label {
+        width: 30rem;
+        margin-right: 2rem; } }
+  @media screen and (min-width: 768px) {
+    .section-fonctionnement__container {
+      display: flex;
+      flex-wrap: wrap; } }
+  @media screen and (min-width: 768px) {
+    .section-fonctionnement {
+      margin: 0 2rem;
+      border-radius: 1.5rem; } }
 
-.card:nth-child(1) img {
+.section-restaurants .container .card:nth-child(1) img {
   object-position: 50% 90%; }
-
-.card:nth-child(2) img {
+.section-restaurants .container .card:nth-child(2) img {
   object-position: 50% 60%; }
-
-.card:nth-child(3) img {
+.section-restaurants .container .card:nth-child(3) img {
   object-position: 50% 90%; }
-
-.card:nth-child(4) img {
+.section-restaurants .container .card:nth-child(4) img {
   object-position: 50% 95%; }
+@media screen and (min-width: 768px) {
+  .section-restaurants .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 0; } }
 
 .img-top img {
   width: 100%; }

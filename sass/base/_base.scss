@@ -1,18 +1,22 @@
 *,
 *::after,
 *::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
-body{
-    background: $color-bg;
+body {
+  background: $color-bg;
+  max-width: 1500px;
+  @media screen and (min-width: 1300px) {
+    margin: 0 auto;
+  }
 }
 
 a {
-    text-decoration: none;
-  }
+  text-decoration: none;
+}
