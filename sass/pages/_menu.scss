@@ -1,5 +1,7 @@
 .img-top img {
   width: 100%;
+  max-height: 50rem;
+  object-fit: cover;
 }
 
 main {
@@ -26,23 +28,32 @@ main {
 }
 
 .article-menu {
-  h3 {
-    text-transform: uppercase;
-    font-weight: 300;
-    &::after {
-      content: "";
-      display: block;
-      width: 4rem;
-      height: 0.3rem;
-      background: $color-tertiary;
-      position: relative;
-      top: 1rem;
-      margin-bottom: 2.5rem;
+  &__container {
+    h3 {
+      text-transform: uppercase;
+      font-weight: 300;
+      &::after {
+        content: "";
+        display: block;
+        width: 4rem;
+        height: 0.3rem;
+        background: $color-tertiary;
+        position: relative;
+        top: 1rem;
+        margin-bottom: 2.5rem;
+      }
+    }
+    .container {
+      margin-bottom: 2 * $layout-margin;
+    }
+    @media screen and (min-width: 768px) {
+      display: flex;
+      justify-content: space-between;
     }
   }
-}
-.container {
-  margin-bottom: 2 * $layout-margin;
+  @media screen and (min-width: 768px){
+    width: 30%;
+  }
 }
 
 .dish {
@@ -98,7 +109,7 @@ main {
       opacity: 0;
     }
   }
-}
+  }
 
 // animation coche
 

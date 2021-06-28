@@ -1,25 +1,25 @@
-.header{
-    height: 7rem;
-    display: flex;
-    justify-content: center;
-    background: $color-white;
-    @include shadow-box;
-    &__logo{
-        display: inline-block;
-        font-family: 'Shrikhand', cursive;
-        font-size: 3rem;
-        font-weight: normal;
-        line-height: 7rem;
-    }
-    a{
-        position: absolute;
-        left: 2rem;
-        top: 2rem;
-        translate: -50%, -50%;
-        font-size: 3rem;
-        color: $color-txt;
-    }
-    .fas {
-        color: $color-footer;
-    }
+.header {
+  height: 7rem;
+  display: flex;
+  justify-content: center;
+  background: $color-white;
+  @include shadow-box;
+  &__logo {
+    display: inline-block;
+    font-family: "Shrikhand", cursive;
+    font-size: 3rem;
+    font-weight: normal;
+    line-height: 7rem;
+  }
+  a {
+    position: absolute;
+    left: 2rem;
+    top: 2rem;
+    translate: -50%, -50%;
+    font-size: 3rem;
+    color: $color-txt;
+  }
+  .fas {
+    color: $color-footer;
+  }
 }

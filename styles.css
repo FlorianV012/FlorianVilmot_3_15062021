@@ -9,6 +9,7 @@ html {
   font-size: 62.5%; }
 
 body {
+  position: relative;
   background: #f6f6f6;
   max-width: 1500px; }
   @media screen and (min-width: 1300px) {
@@ -50,6 +51,7 @@ p {
     box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.5); }
 
 .card {
+  position: relative;
   width: 90vw;
   height: calc(0.7 * 90vw);
   margin: 2rem auto;
@@ -76,9 +78,9 @@ p {
   .card__new {
     width: 8rem;
     height: 3rem;
-    position: relative;
-    top: -95%;
-    left: 70%;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
     background: #99e2d0;
     color: #007a5c;
     text-align: center;
@@ -212,7 +214,7 @@ footer {
   box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.5); }
   .header__logo {
     display: inline-block;
-    font-family: 'Shrikhand', cursive;
+    font-family: "Shrikhand", cursive;
     font-size: 3rem;
     font-weight: normal;
     line-height: 7rem; }
@@ -339,7 +341,9 @@ section {
     margin: 0; } }
 
 .img-top img {
-  width: 100%; }
+  width: 100%;
+  max-height: 50rem;
+  object-fit: cover; }
 
 main {
   display: flex;
@@ -361,10 +365,10 @@ main {
     main h2 .heart {
       margin: 0 1rem 0 auto; }
 
-.article-menu h3 {
+.article-menu__container h3 {
   text-transform: uppercase;
   font-weight: 300; }
-  .article-menu h3::after {
+  .article-menu__container h3::after {
     content: "";
     display: block;
     width: 4rem;
@@ -373,9 +377,15 @@ main {
     position: relative;
     top: 1rem;
     margin-bottom: 2.5rem; }
-
-.container {
+.article-menu__container .container {
   margin-bottom: 4rem; }
+@media screen and (min-width: 768px) {
+  .article-menu__container {
+    display: flex;
+    justify-content: space-between; } }
+@media screen and (min-width: 768px) {
+  .article-menu {
+    width: 30%; } }
 
 .dish {
   display: flex;
