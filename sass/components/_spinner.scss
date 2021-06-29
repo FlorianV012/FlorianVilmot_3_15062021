@@ -1,7 +1,7 @@
-.spin-wrapper {  
+.spin-wrapper {
   background: $color-bg;
-  opacity: 1;  
-  animation: disappear-load  2.5s ease-out forwards;
+  opacity: 1;
+  animation: disappear-load 2.5s ease-out forwards;
 }
 
 .header,
@@ -22,10 +22,11 @@ footer {
   }
 }
 @keyframes disappear-load {
-  0%,99%{
+  0%,
+  99% {
     opacity: 1;
   }
-  100%{
+  100% {
     opacity: 0;
   }
 }
@@ -35,7 +36,7 @@ footer {
   height: 200px;
   width: 200px;
   transform: translate(-50%, -50%);
-  top: 50%;
+  top: 20%;
   left: 50%;
   p {
     margin: auto;
@@ -61,8 +62,8 @@ footer {
     left: $spinner-pos-before;
     right: $spinner-pos-before;
     bottom: $spinner-pos-before;
-    @include anim-spin(2)
-    }
+    @include anim-spin(2);
+  }
   &:after {
     border-top: 5px solid $color-tertiary;
     top: $spinner-pos-after;
@@ -78,7 +79,7 @@ footer {
   height: 230px;
   width: 230px;
   transform: translate(-50%, -50%);
-  top: 50%;
+  top: 20%;
   left: 50%;
   &:before,
   &:after {
